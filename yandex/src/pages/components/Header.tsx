@@ -3,7 +3,16 @@ import News from "./News";
 import Advertising from "./Advertising";
 import ExchangeRate from "./ExchangeRate";
 
-export default function Header() {
+const advProps = {
+    text: "Путин упростил получение номеров",
+    icon: "image",
+}
+/**
+ * A simple component that displays a header.
+ *
+ * @returns {JSX.Element} The JSX element representing the component.
+ */
+export default function Header(): JSX.Element {
   
  
 
@@ -13,7 +22,7 @@ export default function Header() {
             <NewsNavbar></NewsNavbar>
             <News></News>
             <ExchangeRate></ExchangeRate>
-            <Advertising></Advertising>
+            <Advertising {...advProps}></Advertising>
         </div>
           
       
